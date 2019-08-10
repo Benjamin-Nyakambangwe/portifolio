@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>My Portifolio|About</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+<body>
+<div id="top">
+<div class="contain">
+<div class="row">
+<div class="col-md-8">
+	<header>
+			<h2 class="container"><strong><span class="highlight">BEN</span> NYAKAZ</strong><br><small>Designer and Front-End Developer</small></h2>
+	</header>
+</div>
+<div class="col-md-4">
+<nav>
+	<ul>
+		<li><a href="index.html" >HOME</a></li>
+		<li><a href="projects.html" >PROJECTS</a></li>
+		<li><a href="about.html" >ABOUT</a></li>
+		<li class="current"><a href="contact.html" >CONTACT</a></li>
+	</ul>
+</nav>
+</div>
+</div>
+</div>
+<div id="bottomHeader">
+<h3 class="text-center ">HTML5,CSS3,JAVASCRIPT <br>Responsive Design</h3>
+</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+<div class="connect">
+<h2 class="text-center">WANT TO CONNECT</h2>
+</div>
+<div class="container">
+	<form class="text-center" method="POST" action="something.php" name="myForm" onsubmit="return validateForm()">
+		<div class="form-group">
+			
+			<input type="text" name="name" placeholder=" name" class="form-control">
+		</div>
+		<div class="form-group">
+			
+			<input type="email" name="email" placeholder=" email" class="form-control">
+		</div>
+		<div class="form-group">
+			
+			<textarea placeholder=" message" class="form-control" name="message"></textarea>
+		</div>
+		<button type="submit" class="container btn btn-info">SUBMIT</button><br>
+	</form>
+</div>
+</div>
+<div class="col-md-4">
+<div >
+	<div class="contactsidebar">
+<div id="contacthead">
+	<h2 class="text-center">CONTACT DETAILS</h2>
+</div>
+	
+<div class="text-center">
+	<h5>1548 Gadzirirai Road</h5>
+	<h5>ST Mary's</h5>
+	<h5>Chitungwiza</h5>
+	<h5>Zimbabwe</h5>
+</div>
+<br>
+<br>
+<div class="text-center">
+	<h5><strong>PHONE</strong></h5>
+	<h6>+263 785 860 523</h6>
+	<br>
+	<h5><strong>EMAIL</strong></h5>
+	<h6>benjaminnyakambangwe@gmail.com</h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+<footer>
+	<!--<div class="container">
+		<img class="img-circle" src="ben.jpg" alt="me pic" width="20%">
+	</div>-->
+		<nav>
+	<ul class="text-center">
+		<li class="current"><a href="#" >HOME</a></li>
+		<li><a href="projects.html" >PROJECTS</a></li>
+		<li><a href="about.html" >ABOUT</a></li>
+		<li><a href="contact.html" >CONTACT</a></li>
+	</ul>
+</nav>
+</footer>
+
+
+<script type="text/javascript">
+	function validateForm(){
+		var name = document.forms["myForm"]["name"].value;
+
+		if (name == null || name == "") {
+			alert('Name is required');
+			return false;
+		}
+		if (name.length < 3) {
+			alert('Your name should be at least three characters');
+			return false;
+		}
+	
+
+		var email = document.forms["myForm"]["email"].value;
+
+		if (email == null || email == "") {
+			alert('Email is required');
+			return false;
+		}
+	
+	
+		var message = document.forms["myForm"]["message"].value;
+
+		if (message == null || message == "") {
+			alert('Dont forget your message');
+			return false;
+		}
+	}
+</script>
+
+</body>
+</html>
